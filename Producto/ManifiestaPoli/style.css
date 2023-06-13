@@ -1,0 +1,535 @@
+@import url('https://fonts.cdnfonts.com/css/arial-rounded-mt-bold');
+
+body {
+    background: #efe8ef;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.main {
+    padding: 8rem;
+}
+
+h1 {
+    color: #0a4259;
+    font-size: 30px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    color: #56727d;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 0%;
+}
+
+p {
+    color: #27292a;
+    font-size: 17px;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #d9d9d9;
+    color: #0a4259;
+    padding: 0.8rem 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.header a {
+    color: #0a4259;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 0.5rem;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+    transition: all .2s ease-in-out; 
+}
+
+
+
+.navigation button {
+    margin: 0rem 4rem;
+    background: #8d658e;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navigation button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+
+
+/*Inicio Section*/
+
+.container-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    padding: 0 2rem;
+}
+
+.line-right {
+    border-bottom: 8px solid #8c648c;
+    border-right: 8px solid #8c648c;
+    width: 45px;
+    height: 45px;
+    margin: 0 85%
+}
+
+.line-left {
+    border-top: 8px solid #8c648c;
+    border-left: 8px solid #8c648c;
+    width: 45px;
+    height: 45px;
+}
+
+
+.inicio img {
+    margin: 10px;
+}
+
+.inicio button {
+    padding: 0.7rem;
+    color: #0a4259;
+    background: #86b0c2;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.inicio button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+
+/*Information Section*/
+
+.informacion {
+    padding-top: 50px;
+}
+
+.info-container {
+    border-radius: 20px;
+    background: #0a4259;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info-container img {
+    border-radius: 10px;
+}
+
+.info-container h4,
+.info-container h1 {
+    color: #86b0c2;
+    line-height: 0%;
+    padding: 0px 40px;
+}
+
+.info-container p {
+    color: #fff;
+    padding: 0px 40px;
+}
+
+.line {
+    border-top: 3px solid #707577;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+/*Support Section*/
+
+.lineasApoyo {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lineasApoyo h5 {
+    color: #56727d;
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 0%;
+}
+
+.title-support {
+    margin: 30px;
+}
+
+.tar-support {
+    background: #f6dced;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.support {
+    padding: 0px 20px;
+}
+
+.support h3 {
+    color: #0a4259;
+}
+
+.support button {
+    background: #c198c1;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    color: #efe8ef;
+}
+
+.support button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+/*Chat Section*/
+
+.chat {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat img {
+    padding: 70px;
+}
+
+.chat button {
+    color: #fff;
+    background: #8c648c;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+.chat button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+/*News Section*/
+
+.noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tar-new {
+    border-radius: 15px;
+    background: #fff;
+    color: #27292a;
+    width: 270px;
+    height: 550px;
+}
+
+.tar-new img {
+    width: 270px;
+    height: 180px;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.tar-new h3,
+.tar-new p {
+    margin: 20px;
+}
+
+
+footer {
+    background: #8c648c;
+    color: #fff;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    opacity: 50%;
+    padding: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+/*Login*/
+
+.main-login{
+    margin: 2rem 6rem;
+}
+
+.tar{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tar-login {
+    padding: 10px 45px;
+    background: #fff;
+    height: 70%;
+    width: 50%;
+    box-shadow: -5px 8px 8px -1px rgba(0, 0, 0, 0.2);
+}
+
+.tar-login h1{
+    margin: 25px 210px;
+}
+
+.tar-login #gmail{
+    margin: 10px 240px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.tar-login input[type="email"],
+.tar-login input[type="password"] {
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    width: 365px;
+    height: 30px;
+    margin: 10px 70px;
+}
+
+.tar-login button {
+    background: #0a4259;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 30px;
+    margin: 10px 15px;
+}
+
+.tar-login button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+.tar-login h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #a8a6a6;
+    margin: 25px 50px 15px 150px;
+}
+
+.tar-login input[type="checkbox"]{
+    margin: 10px 0px 10px 145px;
+}
+
+.tar-login h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515151;
+    
+}
+
+
+
+/*Register*/
+
+.main-register{
+    margin: 2rem 6rem;
+}
+
+.tar2{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tar-register {
+    padding: 8px 45px;
+    background: #fff;
+    height: 80%;
+    width: 63%;
+    box-shadow: -5px 8px 8px -1px rgba(0, 0, 0, 0.2);
+}
+
+.tar-register h1{
+    margin: 0px 310px;
+}
+
+.tar-register input[type="text"],
+.tar-register input[type="email"],
+.tar-register input[type="password"] {
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    width: 420px;
+    height: 20px;
+    margin: 5px 150px;
+}
+
+.tar-register select{
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    width: 435px;
+    height: 40px;
+    margin: 5px 150px;
+}
+
+.tar-register button {
+    background: #0a4259;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 30px;
+    margin: 5px 315px;
+}
+
+.tar-register button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+.tar-register h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #a8a6a6;
+    margin: 25px 0px 15px 225px;
+}
+
+
+.tar-register h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515151;
+    margin: 10px;
+    
+}
+
+
+/*Chat*/
+
+.main-chat{
+    margin: 1rem 6rem;
+}
+
+.tar3{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tar-chat {
+    padding: 0px 45px;
+    background: #fff;
+    height: 80%;
+    width: 90%;
+    box-shadow: -5px 8px 8px -1px rgba(0, 0, 0, 0.2);
+}
+
+.tar-chat h1{
+    margin: 0px 310px;
+}
+
+.tar-chat h4 {
+    font-size: 15px;
+    margin: 20px 375px;
+}
+
+.tar-chat input{
+    height: 25px;
+    margin-left: 100px;
+    border-radius: 15px;
+    border: none;
+    background: #e1e4e4;
+    padding: 5px 10px;
+}
+
+.tar-chat button{
+    border: none;
+    border-radius: 15px;
+    background: #0a4259;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 1px;
+}
+
+.tar-chat button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}
+
+.tar-chat h3{
+    font-size: 16px;
+    font-weight: 200;
+    color: #8d658e;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ManifiestaPoli</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main-register">
+        <div class="tar2">
+            <div class="tar-register">
+                <a href="/index.html"><img src="images/header.png" alt="" style="height: 70px;"></a>
+                <a href="/index.html"><img src="images/ManifiestaPoli.png" alt="" style="height: 95px;"></a>
+
+                <h1>Registro</h1>
+                    <h4>Debes registrarte con tu correo institucional</h4>
+                    <input id="nombre" type="text" placeholder="Nombre completo">
+                    <input id="apellido" type="text" placeholder="Pregrado académico">
+                    <select name="genero" id="select" >
+                        <option disabled selected>Género</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="NB">No Binario</option>
+                    </select>
+                    <input type="email" placeholder="Correo Electrónico" id="correo">
+                    <input id="password" type="password" placeholder="Contraseña">
+                    <input id="confirmacion" type="password" placeholder="Confirmar contraseña">
+
+                    <button type="submit" onclick="verificarCorreo()">Registrarse</button>
+                
+                <p style="font-size: 15px; color: brown; text-align: center;" id="mensaje"></p>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; margin-right: 500px;"><h5>¿Ya tienes cuenta?</h5><a href="/login.html">Ingresa</a></div>
+            </div>
+
+            <div>
+                <img src="images/info6.jpg" alt="" style="height: 583px; width: 275px; opacity: 37%; position: absolute; left: 900px;">
+                <img src="images/footer.png" alt="" style="height: 250px; width: 250px; position: absolute; top: 120px; left: 910px;">
+                <img src="images/ManifiestaPoli.png" alt="" style="height: 260px; width: 260px; position: absolute; top: 320px; left: 910px;">
+            </div>
+
+        </div>
+        <script>
+            function verificarCorreo() {
+            
+              var inputNombre = document.getElementById("nombre");
+              var inputApellido = document.getElementById("apellido");
+              var inputCorreo = document.getElementById("correo");
+              var inputPassword = document.getElementById("password");
+              var inputConfirmacion = document.getElementById("confirmacion");
+
+              var mensaje = document.getElementById("mensaje");
+              var nombre = inputNombre.value;
+              var apellido = inputApellido.value;
+              var correo = inputCorreo.value;
+              var password = inputPassword.value;
+              var confirmacion = inputConfirmacion.value;
+
+
+
+            if (nombre.trim() === '' || apellido.trim() === '' || correo.trim() === '' || password.trim() === '' || confirmacion.trim() === '') {
+                mensaje.innerText = "Todos los campos deben ser completados";
+                return;
+            }
+        
+              if (correo.includes("@elpoli.edu.co")) {
+                window.location.replace("index.html");  // Permite enviar el formulario y pasar a la siguiente pantalla
+              } else {
+                mensaje.innerText = "Debes pertenecer al Politécnico Colombiano Jaime Isaza Cadavid";
+                return false; // Detiene el envío del formulario
+              }
+            }
+        </script>
+    </main>
+</body>
+
+</html>

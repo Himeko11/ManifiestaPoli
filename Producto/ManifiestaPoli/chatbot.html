@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - ManifiestaPoli</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main-chat">
+        <div class="tar3">
+            <div class="tar-chat">
+                <a href="/index.html"><img src="images/header.png" alt="" style="height: 70px;"></a>
+                <a href="/index.html"><img src="images/ManifiestaPoli.png" alt="" style="height: 95px;"></a>
+
+                <h1>Habla con nosotros</h1>
+                <h4>Sigue las instrucciones</h4>
+
+                <div style="background: #fbfbfb; height: 430px; margin: 0px 0px 30px 0px;">
+                    <div style="height: 350px; width: 400px; justify-content: space-between; display: flex;">
+                        <img src="images/footer.png" alt="" style="height: 50px; width: 50px; margin: 20px 10px;">
+                        <div>
+                            <h3>ManifiestaPoli</h3>
+                            <div
+                                style="height: max-content; background: #f2f2f2; width: 300px; padding: 5px 15px; border-radius: 10px;">
+                                <p>¡Bienvenide a ManifiestaPoli!
+                                    <br>Estamos para escucharte, indicanos en qué te podemos ayudar.
+                                </p>
+                                <button id="boton1" onclick="mostrarMensaje1()" style="background: #919191;">Reportar un caso de abuso</button>
+                                <button id="boton2" onclick="mostrarMensaje2()" style="background: #919191;">Reportar un caso de acoso u hostigamiento</button>
+                                <button id="boton3" onclick="mostrarMensaje3()" style="background: #919191;">Reportar un caso de explotación</button>
+                                <br>
+                                <br>
+                                <div style="font-size: 12px; text-align: right; color: #919191;">
+                                </div>
+                            </div>
+                            <script>
+                                var d = new Date();
+                                document.write(d.getUTCDate()  + '/', (d.getMonth()+1) + '/', d.getFullYear(), ' , ' + d.getHours(), ':' + d.getUTCMinutes());;
+                            </script> 
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin-left: 570px; text-align: right; height: max-content; background: #f2f2f2; width: 300px;  border-radius: 10px;" id="mensaje1"></div>
+                        <div style="margin-left: 570px; text-align: right; height: max-content; background: #f2f2f2; width: 300px;  border-radius: 10px;" id="mensaje2"></div>
+                        <div style="margin-left: 570px; text-align: right; height: max-content; background: #f2f2f2; width: 300px; border-radius: 10px;" id="mensaje3"></div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Mensaje" style="width: 70%;">
+                        <button>Enviar</button> <a href="/index.html"><button style="background: #a13030;">Salir</button></a>
+                    </div>
+                </div>
+            </div>
+            <div style="background: #c9c8e8; width: 100px;"></div>
+        </div>
+
+        <script>
+            function mostrarMensaje1() {
+                var boton1 = document.getElementById("boton1");
+                var mensaje1 = document.getElementById("mensaje1");
+
+                mensaje1.innerText = boton1.innerText;
+                mensaje1.style.display = "block";
+                mensaje1.style.padding = "15px";
+                mensaje1.style.marginBottom = "20px";
+                
+            }
+
+            function mostrarMensaje2() {
+                var boton2 = document.getElementById("boton2");
+                var mensaje2 = document.getElementById("mensaje2");
+
+                mensaje2.innerText = boton2.innerText;
+                mensaje2.style.display = "block";
+                mensaje2.style.padding = "15px";
+                mensaje2.style.marginBottom = "20px";
+            }
+
+            function mostrarMensaje3() {
+                var boton3 = document.getElementById("boton3");
+                var mensaje3 = document.getElementById("mensaje3");
+
+                mensaje3.innerText = boton3.innerText;
+                mensaje3.style.display = "block";
+                mensaje3.style.padding = "15px";
+                mensaje3.style.marginBottom = "20px";
+            }
+
+        </script>
+    </main>
+</body>
+
+</html>
